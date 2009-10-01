@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>Number Guess Game:Guess</title>
+		<link rel="stylesheet" href="numguess.css" />
+	</head>
+	<body>
+		<h1>Guess</h1>
+		<p>I'm thinking of a number between 1 and 100. Please make your 
+			guess.</p>
+		<form name="guessForm" method="post" action="invalid.html">
+			Guess:<input type="text" name="guess" maxlength="8" size="8" 
+			value="0" /><input type="submit" value="Submit" /></form>
+		<script type="text/javascript">
+  var focusControl = document.forms["guessForm"].elements["guess"];
+
+  if (focusControl.type != "hidden") {
+     focusControl.focus();
+  }
+</script>
+	</body>
+</html>
